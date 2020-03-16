@@ -8,7 +8,7 @@ import {
 
 export const initialState = {
   bookList: [],
-  book: { id: '', author: '', cate: '', year: '' },
+  book: { id: '', title: '', author: '', year: '' },
 };
 /* eslint-disable default-case, no-param-reassign */
 const homeReducer = (state = initialState, action) =>
@@ -38,7 +38,7 @@ const homeReducer = (state = initialState, action) =>
         } else {
           draft.bookList = [...state.bookList, action.payload];
         }
-        draft.book = { id: '', author: '', cate: '', year: '' };
+        draft.book = { id: '', title: '', author: '', year: '' };
         break;
       }
     }

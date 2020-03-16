@@ -6,7 +6,7 @@ const FormInput = props => {
   const {
     idOnChange,
     authorOnChange,
-    cateOnChange,
+    titleOnChange,
     yearOnChange,
     onSaveBook,
     bookData,
@@ -26,6 +26,18 @@ const FormInput = props => {
         </ListColumn>
       </ListRow>
       <ListRow>
+        <ListColumn>Title</ListColumn>
+        <ListColumn>
+          <input
+            id="title"
+            type="text"
+            required
+            value={bookData.title}
+            onChange={titleOnChange}
+          />
+        </ListColumn>
+      </ListRow>
+      <ListRow>
         <ListColumn>Author</ListColumn>
         <ListColumn>
           <input
@@ -34,18 +46,6 @@ const FormInput = props => {
             required
             value={bookData.author}
             onChange={authorOnChange}
-          />
-        </ListColumn>
-      </ListRow>
-      <ListRow>
-        <ListColumn>Categories</ListColumn>
-        <ListColumn>
-          <input
-            id="cate"
-            type="text"
-            required
-            value={bookData.cate}
-            onChange={cateOnChange}
           />
         </ListColumn>
       </ListRow>

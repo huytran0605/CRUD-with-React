@@ -45,8 +45,8 @@ export const BookList = props => {
   const authorOnChange = event => {
     changeStageInput(event, 'author');
   };
-  const cateOnChange = event => {
-    changeStageInput(event, 'cate');
+  const titleOnChange = event => {
+    changeStageInput(event, 'title');
   };
   const yearOnChange = event => {
     changeStageInput(event, 'year');
@@ -58,7 +58,7 @@ export const BookList = props => {
       <FormInput
         authorOnChange={authorOnChange}
         idOnChange={idOnChange}
-        cateOnChange={cateOnChange}
+        titleOnChange={titleOnChange}
         yearOnChange={yearOnChange}
         onSaveBook={onSaveBook}
         bookData={bookData}

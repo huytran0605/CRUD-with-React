@@ -10,8 +10,8 @@ const ListItem = props => {
   return (
     <ListRow>
       <ListColumn>{book.id}</ListColumn>
+      <ListColumn>{book.title}</ListColumn>
       <ListColumn>{book.author}</ListColumn>
-      <ListColumn>{book.cate}</ListColumn>
       <ListColumn>{book.year}</ListColumn>
       <ListColumn>
         <Button inTable type="button" onClick={() => edit(book)}>
